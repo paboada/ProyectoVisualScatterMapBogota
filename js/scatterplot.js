@@ -10,13 +10,13 @@ var x = d3.scale.linear()
     .range([0, width]);
 
 var y = d3.scale.linear()
-    .range([height, 0]);
+    .range([height, 0]); 
 
 var color = d3.scale.category10();
 
 var xAxis = d3.svg.axis()
     .scale(x)
-    .orient("bottom");
+    .orient("bottom"); 
 
 var yAxis = d3.svg.axis()
     .scale(y)
@@ -87,7 +87,7 @@ d3.tsv("Datos/data.tsv", function(error, data) {
                                  })
     ;
 
-  var legend = svg.selectAll(".legend")
+  /*var legend = svg.selectAll(".legend")
       .data(color.domain())
     .enter().append("g")
       .attr("class", "legend")
@@ -102,14 +102,17 @@ d3.tsv("Datos/data.tsv", function(error, data) {
 
   legend.append("text")
       .attr("x", width)
-      .attr("y", 9)
+      .attr("y", 9) 
       .attr("dy", ".35em")
       .style("text-anchor", "end")
-      .text(function(d) { return d; });
-      });
+      .text(function(d) { return d; });*/
+      
+
+});
       
  
 }
+
     
 
 

@@ -21,6 +21,15 @@ body {
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script src="js/scatterplot.js"></script>
+  
+<div class="CheckBoxLocalidades">
+        <button onclick="seleccionar_todos()" style="width: 150px">Seleccionar Todos</button><br> 
+        <button onclick="ninguno()" style="width: 150px">Ninguno</button><br>
+        <label> <input type="checkbox" id="cbox1" value="Suba">Suba</label><br>
+       <label> <input type="checkbox" id="cbox2" value="Fontibon">Fontibon</label><br>
+       <label> <input type="checkbox" id="cbox3" value="Chapinero">Chapinero</label><br>
+</div>
+
 <script>
     draw_scatter();
 </script>
